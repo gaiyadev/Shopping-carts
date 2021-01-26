@@ -28,6 +28,24 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+gi
 ### `yarn eject`
 
+
+
+### Guide
+
+Get Repo URL
+
+in your BitBucket repo, choose "Clone" on the top-right
+choose "HTTPS" instead of "SSH" in the top-right of the dialog
+it should show your repo url in the form git clone <repository url>
+Add Remote Using CLI
+
+cd /path/to/my/repo
+git remote add origin https://bitbucket.org/<username>/<reponame>.git
+git push -u origin --all
+Add Remote Using SourceTree
+
+Repository>Add Remote...
+Paste the BitBucket repository url (https://bitbucket.org/<username>/<reponame>.git)
